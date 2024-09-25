@@ -5,7 +5,7 @@
  * Plugin URI:  https://www.chapchappay.com/
  * Author:      CHAP CHAP PAY S.A
  * Author URI:  https://www.chapchappay.com/
- * Description: Allow users to pay using their Orange Money, MTN Mobile,PayCard or Visa/Master Card.
+ * Description: Allow users to pay using their PayCard, Orange Money, MTN Mobile, or Visa & MasterCard.
  * Version:     1.0.1
  * License:     GPL-2.0+
  * License URL: http://www.gnu.org/licenses/gpl-2.0.txt

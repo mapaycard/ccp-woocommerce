@@ -84,7 +84,7 @@ class WC_Gateway_Chap_Chap_Pay extends WC_Payment_Gateway
         $this->method_description = wpautop(__(
             "Accept payment using CHAP CHAP PAY.
                 This gateway supports the following CURRENCIES only : <b> GNF</b>.
-                And the following PAYMEMNT METHODES only : <b>ORANGE MONEY</b>, <b>MTN MOBILE MONEY</b>, <b>PAYCARD</b>, <b>Visa & Master Card</b>,",
+                And the following PAYMEMNT METHODS only : <b>PAYCARD</b>, <b>ORANGE MONEY</b>, <b>MTN MOBILE MONEY</b>, <b>Visa & MasterCard</b>,",
             'chap_chap_pay'
         ));
         $this->order_button_text = __('Payez', 'chap_chap_pay');
@@ -119,7 +119,7 @@ class WC_Gateway_Chap_Chap_Pay extends WC_Payment_Gateway
                 'title' => __('Description', 'chap_chap_pay'),
                 'type' => 'textarea',
                 'description' => __('La description qui sera affiché sur la page checkout', 'chap_chap_pay'),
-                'default' => __('Payer facilement par Orange Money, MTN Mobile, PayCard, Visa/Master Card. <a href="https://www.paycard.co" target="_blank">En savoir plus</a>', 'chap_chap_pay'),
+                'default' => __('Payer facilement par PayCard, Orange Money, MTN Mobile, Visa & MasterCard. <a href="https://www.mapaycard.com" target="_blank">En savoir plus</a>', 'chap_chap_pay'),
                 'desc_tip' => true,
             ),
             'instructions' => array(
@@ -132,7 +132,7 @@ class WC_Gateway_Chap_Chap_Pay extends WC_Payment_Gateway
             'api_login' => array(
                 'title' => __('Code E-Commerce', 'chap_chap_pay'),
                 'type' => 'text',
-                'desc_tip' => __('Votre code E-Commerce est visible en vous connectant sur https://www.paycard.co', 'chap_chap_pay'),
+                'desc_tip' => __('Votre code E-Commerce est visible en vous connectant sur https://www.mapaycard.com', 'chap_chap_pay'),
             ),
         );
     }
@@ -561,7 +561,7 @@ class WC_Gateway_Chap_Chap_Pay extends WC_Payment_Gateway
                 $text = "PAYCARD";
                 break;
             case 'cc':
-                $text = "Carte de Credit";
+                $text = "Carte bancaire";
                 break;
             case 'orange_money':
                 $text = "Orange Money";
